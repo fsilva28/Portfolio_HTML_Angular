@@ -1,0 +1,12 @@
+<body>
+    <div class="container mt-5">
+        <h2>Pretende eliminar o Status?</h2>
+        <div class="status-box">
+            <h3>{{ statusOcorrencia.idStatusOcorrencia }}: {{ statusOcorrencia.descricaoStatus }}</h3>
+        </div>
+        <form (submit)="delete()">
+            <button class="btn btn-danger" (click)="confirmDelete()">Confirmar Eliminação</button>
+            <button class="btn btn-danger retroceder" [routerLink]="['/statusocorrencias']">Retroceder</button>
+        </form>
+    </div>
+</body>

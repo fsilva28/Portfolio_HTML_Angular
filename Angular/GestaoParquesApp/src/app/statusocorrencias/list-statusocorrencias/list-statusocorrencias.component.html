@@ -1,0 +1,27 @@
+<section>
+    <div class="status-box rounded p-2 mb-4">
+        <h1>Status Ocorrência:</h1>
+    </div>
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5" *ngFor="let stat of statusocorrenciasList">
+                <div class="card h-100">
+                    <img class="card-img-top" src="/assets/images/statusocorrencia/{{stat.idStatusOcorrencia}}.png" alt="icon" />
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <h5 class="fw-bolder">{{stat.idStatusOcorrencia}} - {{stat.descricaoStatus}}</h5>
+                            <div class="button-container">
+                                <button id="editar" class="btn btn-primary" [routerLink]="['/statusocorrencias/update-statusocorrencia', stat.idStatusOcorrencia]" title="Actualizar">
+                                    <img src="/assets/images/update.png" alt="icon" class="icon-img">
+                                </button>
+                                <button class="btn btn-danger" [routerLink]="['/statusocorrencias/delete-statusocorrencia', stat.idStatusOcorrencia]" title="Eliminar">
+                                    <img src="assets/images/delete.png" alt="icon" class="icon-img">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

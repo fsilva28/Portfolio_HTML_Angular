@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corpos Sociais</title>
+    <script src="./codeTrabalho.js"></script>
+    <link rel="stylesheet" href="./stylesACRDF.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo_container">
+            <figure>
+                <img class="logo" src="images/logo_acrdf.png" alt="logotipo" width="156" height="215.53">
+            </figure>
+        </div>
+
+    </header>
+
+    <main>
+        <div>
+            <nav class="navbar">
+                <strong class="buttons">
+                    <button class="buttons"> <a href="inicio.html">Início</a></button>
+                    <button class="buttons"> <a href="corposSociais.html">Corpos Sociais</a></button>
+                    <button class="buttons"> <a href="actividades.html">Actividades</a></button>
+                </strong>
+            </nav>
+        </div>
+
+        <div class="titulo">
+            <h1>Corpos Sociais</h1>
+        </div>
+
+        <button class="orgaos" onclick="mostraTabela('tabelaAG')">Assembleia Geral</button>
+        <button class="orgaos" onclick="mostraTabela('tabelaDirecao')">Direcção</button>
+        <button class="orgaos" onclick="mostraTabela('tabelaCF')">Conselho Fiscal</button>
+
+        <div id="tabelaAG" class="tableContainer">
+            <table border="1">
+                <tr>
+                    <th>Cargo</th>
+                    <th>Nome</th>
+                </tr>
+                <tr>
+                    <td>Presidente</td>
+                    <td>Augusto Vaz</td>
+                </tr>
+                <tr>
+                    <td>Vice-Presidente</td>
+                    <td>António Pereira</td>
+                </tr>
+                <tr>
+                    <td>Secretária</td>
+                    <td>Joana Henriques</td>
+                </tr>
+            </table>
+        </div>
+        <div id="tabelaDirecao" class="tableContainer" style="display: none;">
+            <table border="1">
+                <tr>
+                    <th>Cargo</th>
+                    <th>Nome</th>
+                </tr>
+                <tr>
+                    <td>Presidente</td>
+                    <td>Natália Pereira</td>
+                </tr>
+                <tr>
+                    <td>Secretário</td>
+                    <td>Leandro Macedo</td>
+                </tr>
+                <tr>
+                    <td>Tesoureira</td>
+                    <td>Daniela Duarte</td>
+                </tr>
+                <tr>
+                    <td>Vogal</td>
+                    <td>Augusto Henriques</td>
+                </tr>
+                <tr>
+                    <td>Vogal</td>
+                    <td>Fernando Almeida</td>
+                </tr>
+                <tr>
+                    <td>Vogal</td>
+                    <td>Renata Sousa</td>
+                </tr>
+                <tr>
+                    <td>Vogal</td>
+                    <td>Sónia Veloso</td>
+                </tr>
+                <tr>
+                    <td>Vogal</td>
+                    <td>Óscar Duarte</td>
+                </tr>
+                <tr>
+                    <td>Vogal</td>
+                    <td>Marco Gomes</td>
+                </tr>
+                <tr>
+                    <td>Vogal</td>
+                    <td>Dinis Sousa</td>
+                </tr>
+                <tr>
+                    <td>Vogal</td>
+                    <td>Sónia Fernandes</td>
+                </tr>
+                <tr>
+                    <td>Vogal</td>
+                    <td>Jorge Torres</td>
+                </tr>
+                <tr>
+                    <td>Vogal</td>
+                    <td>Carina Pereira</td>
+                </tr>
+                <tr>
+                    <td>Vogal</td>
+                    <td>Tommy Vieira</td>
+                </tr>
+                <tr>
+                    <td>Vogal</td>
+                    <td>Rosário Pereira</td>
+                </tr>
+                <tr>
+                    <td>Vogal</td>
+                    <td>António Martins</td>
+                </tr>
+                <tr>
+                    <td>Vogal</td>
+                    <td>Cláudia Fonseca</td>
+                </tr>
+                <tr>
+                    <td>Vogal</td>
+                    <td>André Vaz</td>
+                </tr>
+            </table>
+        </div>
+        <div id="tabelaCF" class="tableContainer" style="display: none;">
+            <table border="1">
+                <tr>
+                    <th>Cargo</th>
+                    <th>Nome</th>
+                </tr>
+                <tr>
+                    <td>Presidente</td>
+                    <td>José Vaz</td>
+                </tr>
+                <tr>
+                    <td>Secretária</td>
+                    <td>Clarisse Vieira</td>
+                </tr>
+                <tr>
+                    <td>Relatora</td>
+                    <td>Marina Fernandes</td>
+                </tr>
+            </table>
+        </div>
+
+        <article>
+            <div id="main-content">
+            </div>
+            <div class="articleCorposSociais">
+                <p>A Associação Cultural, Recreativa e Desportiva de Fontarcada tem como órgãos sociais a Assembleia
+                    Geral, a Direcção e o Conselho Fiscal.</p>
+                <p>A competência e a forma de funcionamento da Assembleia Geral são as prescritas nas disposições legais
+                    aplicáveis, designadamente os artigos 170.º a 179.º do Código Civil.</p>
+                <p>O Conselho Fiscal é composto por um presidente, um secretário e um relator, competindo-lhe fiscalizar
+                    os actos administrativos e financeiros da Direcção, verificar as contas e os relatórios e emitir
+                    pareceres.</p>
+            </div>
+            </div>
+        </article>
+
+    </main>
+
+    <br>
+
+    <div id="footer" style="display: flex; justify-content: space-between;">
+        <div>
+            Rua do Ringue,<br>
+            UF de Fontarcada e Oliveira, 4830-211<br>
+            Póvoa de Lanhoso<br>
+        </div>
+        <div>
+            email: acrdfontarcada@gmail.com <br>
+            <a href="https://www.facebook.com/profile.php?id=100093844485835">
+                <img src="Images/logo_facebook.png" alt="facebook" width="24" height="24">
+            </a>
+        </div>
+</body>
+
+</html>

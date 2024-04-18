@@ -1,0 +1,49 @@
+.status-box {
+    border-radius: 20px;
+    text-align: left;
+    text-indent: 1%;
+    background-color: #FFC107;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-img {
+    width: 42px;
+    height: auto;
+}
+
+.btn-primary,
+.btn-danger {
+    padding: 3px 3px;
+    border-radius: 20px;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-danger:hover {
+    background-color: #ffcc00;
+}
+
+.tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.btn-primary:hover .tooltip,
+.btn-danger:hover .tooltip {
+    opacity: 1;
+}

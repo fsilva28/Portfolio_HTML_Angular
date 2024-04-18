@@ -1,0 +1,15 @@
+<body>
+  <div class="container d-flex justify-content-center align items-center vh-100">
+    <div class="create">
+      <h1>Criar Status Ocorrência</h1>
+      <form (submit)="create()">
+        <div class="form-group mt-3">
+          <label for="nome">Descrição do Status</label>
+          <input type="text" class="form-control" id="nome" placeholder="Descrição..." name="descricaoStatus"
+            [(ngModel)]="statusOcorrencia.descricaoStatus">
+        </div>
+        <button type="submit" class="btn btn-dark btn-sm">Criar</button>
+      </form>
+    </div>
+  </div>
+</body>

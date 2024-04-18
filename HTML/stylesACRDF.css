@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/*Logótipo*/
+.logo_container {
+  text-align: center;
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+/*Barra de Navegação*/
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: green;
+}
+
+.buttons {
+  border: none;
+  background: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+}
+
+/*Página Inicial*/
+.titulo {
+  margin-top: 20px;
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.article {
+  width: 40%;
+  margin: 80px;
+  text-align: justify;
+  float: left;
+}
+
+/*Texto Corpos Sociais*/
+.articleCorposSociais {
+  width: 40%;
+  margin: 80px;
+  text-align: justify;
+  float: right;
+}
+
+/*Foto página inicial*/
+.foto {
+  width: 40%;
+  margin: 20px;
+}
+
+/*Formulário Inscrição*/
+.container {
+  max-width: 500px;
+  margin: 80px;
+  background-color: gainsboro;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px lightgray;
+}
+
+.tituloForm {
+  text-align: center;
+  font-size: 18px;
+  color: green;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+input {
+  width: calc(100% - 16px);
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 1px;
+  border: 1px solid forestgreen;
+  border-radius: 4px;
+}
+
+.buttonForm {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/*Tabela Corpos Sociais*/
+.tableContainer {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  font-size: small;
+}
+
+th {
+  background-color: whitesmoke;
+  color: black;
+}
+
+tr:hover {
+  background-color: lightgrey;
+}
+
+/*Butões Órgãos Sociais*/
+.orgaos {
+  margin: 20px;
+  margin-right: -10px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #3e8e41;
+  color: white;
+  border: 1px solid gainsboro;
+  border-radius: 4px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.orgaos.selected {
+  background-color: #3e8e41;
+  color: white;
+  border-color: black;
+}
+
+/*Página Actividades*/
+.tituloEsq,
+.articleEsq,
+.tituloDir,
+.articleDir {
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+  padding: 10px;
+}
+
+.articleEsq {
+  clear: left;
+  text-align: justify;
+  margin-top: 0px;
+  padding-right: 100px;
+}
+
+.tituloDir,
+.articleDir {
+  float: right;
+}
+
+.articleDir {
+  text-align: justify;
+  padding-left: 40px;
+}
+
+.tituloEsq {
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 0%;
+}
+
+.tituloDir {
+  text-align: right;
+  padding: 10px;
+  margin-top: 0;
+}
+
+.fotoDir {
+  justify-self: end;
+  margin-left: 200px;
+}
+
+/*Footer*/
+#footer {
+  padding: 10px;
+  background-color: green;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+}
+
+#footer div {
+  max-width: 50%;
+}

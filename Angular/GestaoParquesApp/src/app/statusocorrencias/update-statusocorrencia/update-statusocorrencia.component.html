@@ -1,0 +1,15 @@
+<body>
+    <div class="container mt-5">
+        <div class="update">
+            <h1>Editar Status Ocorrência</h1>
+            <form (submit)="update()" class="mt-5">
+                <div class="form-group mt-3">
+                    <label for="nome">Insira a nova descrição</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Descrição..." name="descricaoStatus"
+                        [(ngModel)]="statusOcorrencia.descricaoStatus">
+                </div>
+                <button type="submit" class="btn btn-dark btn-sm">Guardar</button>
+            </form>
+        </div>
+    </div>
+</body>

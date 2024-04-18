@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="pagina inicial" » <meta name="keywords" content="associacao, fontarcada, acrdf">
+    <meta name="author" conten="Jorge Mano Torres">
+    <title>Início</title>
+    <link rel="stylesheet" href="./stylesACRDF.css">
+    <script src="./codeTrabalho.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo_container">
+            <figure>
+                <img class="logo" src="images/logo_acrdf.png" alt="logotipo" width="156" height="215.53">
+            </figure>
+        </div>
+
+    </header>
+    <main>
+        <div>
+            <nav class="navbar">
+                <strong class="buttons">
+                    <button class="buttons"> <a href="inicio.html">Início</a></button>
+                    <button class="buttons"> <a href="corposSociais.html">Corpos Sociais</a></button>
+                    <button class="buttons"> <a href="actividades.html">Actividades</a></button>
+                </strong>
+            </nav>
+        </div>
+
+        <article>
+            <div id="main-content">
+                <div class="titulo">
+                    <h1>A Associação Cultural, Recreativa e Desportiva de Fontarcada</h1>
+                </div>
+                <div class="article">
+                    <p>A Associação Cultural, Recreativa e Desportiva de Fontarcada foi criada, por um conjunto de
+                        homens e mulheres desta freguesia a 26 de Outubro de 1990. Entre os fundadores contavam-se 11
+                        homens e quatro mulheres, tendo a sua primeira sede no lugar do Mosteiro.</p>
+                    <p>Colectividade sem fins lucrativos, esta Associação tem como objectivos a dinamização e promoção
+                        de todo o tipo de actividades culturais e recreativas, promovendo actividades ao ar livre entre
+                        os seus associados e a defesa e valorização do património cultural da freguesia .</p>
+                    <p>Actualmente a ACRDF tem a sua sede na rua do Ringue, lugar da Costa, dispondo de um ringue com
+                        bancadas e estruturas de apoio (bar, balneários, casas-de-banho), além de iluminação que permite
+                        a realização de actividades nocturnas.
+                        Entre as actividades regulares que organiza contam-se os torneios de sueca da Páscoa e de Natal,
+                        a caminhada-convívio (em Julho de todos os anos), o cantar dos reis/janeiras e a participação no
+                        cortejo etnográfico das festas de S. José.</p>
+                </div>
+                <figure>
+                    <img class="foto" src="images/caminhada.jpg" alt="caminhada" width="760" height="439">
+                </figure>
+            </div>
+        </article>
+
+        <aside>
+
+            <div class="container">
+                <h1 class="tituloForm">Faça-se Sócio:</h1>
+                <form name="inscricao" onsubmit="return validateForm();" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Insira o nome" />
+                    </div>
+                    <div class="form-group">
+                        <label for="morada">Morada</label>
+                        <input type="text" class="form-control" id="morada" name="morada"
+                            placeholder="Insira a morada" />
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" class="form-control" id="telefone" name="telefone"
+                            placeholder="Insira o telefone" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Insira o email" />
+                    </div>
+                    <button type="submit" class="buttonForm">Efectuar Inscrição</button>
+                </form>
+            </div>
+        </aside>
+
+    </main>
+
+    <div id="footer" style="display: flex; justify-content: space-between;">
+        <div>
+            Rua do Ringue,<br>
+            UF de Fontarcada e Oliveira, 4830-211<br>
+            Póvoa de Lanhoso<br>
+        </div>
+        <div>
+            email: acrdfontarcada@gmail.com <br>
+            <a href="https://www.facebook.com/profile.php?id=100093844485835">
+                <img src="Images/logo_facebook.png" alt="facebook" width="24" height="24">
+            </a>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<body>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <section class="detalhes">
+            <h1>Detalhes do Status Ocorrência</h1>
+            <div class="container px-4 px-lg-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="input-group mt-3">
+                            <label for="inputName">Id do Status</label>
+                            <input type="text" class="form-control rounded" placeholder="Insira o ID do Status" [(ngModel)]="idStatusOcorrencia">
+                            <button class="btn btn-dark btn-sm" type="button" (click)="buscarStatus()">Pesquisar</button>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="statusOcorrencia">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <img class="card-img-top "
+                                            src="/assets/images/statusocorrencia/{{statusOcorrencia.idStatusOcorrencia}}.png" alt="..." />
+                                        <h5 class="fw-bolder">{{ statusOcorrencia.idStatusOcorrencia }} - {{ statusOcorrencia.descricaoStatus }}</h5>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>

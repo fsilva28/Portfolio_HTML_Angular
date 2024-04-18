@@ -1,0 +1,5 @@
+<input type="text" [(ngModel)]="userInput" placeholder="Enter descricaoStatus">
+<button (click)="filterStatusOcorrencias()">Filter</button>
+<div *ngFor="let statusocorrencia of statusocorrenciasList">
+    {{ statusocorrencia.descricaoStatus }}
+</div>

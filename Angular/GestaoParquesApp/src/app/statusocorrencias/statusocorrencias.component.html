@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div class="d-flex flex-wrap">
+        <div id="button-container" class=" col-sm-12 col-md-3 text-dark p-5 mb-3 ">
+            <button #list id="list" class="rounded-button p-2 mb-4" (click)="openComponent(list)">Ver todos os Status</button>
+            <button #create id="create" class="rounded-button mb-2" (click)="openComponent(create)">Criar Status</button>
+            <button #read id="read" class="rounded-button mb-2" (click)="openComponent(read)">Consultar Status</button>
+            <button #byDescricao id="bydescricao" class="rounded-button mb-2" (click)="openComponent(byDescricao)">Filtrar por Descrição</button>
+        </div>
+        <div class=" col-sm-12 col-md-9 p-3 mb-3 ">
+            <ng-container [ngSwitch]="currentComponent">
+                <app-list-statusocorrencias *ngSwitchCase="'list-status'"></app-list-statusocorrencias>
+                <app-create-statusocorrencia *ngSwitchCase="'create-status'"></app-create-statusocorrencia>
+                <app-read-statusocorrencia *ngSwitchCase="'read-status'"></app-read-statusocorrencia>
+                <app-bydescricao-statusocorrencia *ngSwitchCase="'bydescricao-status'"></app-bydescricao-statusocorrencia>
+                <div *ngSwitchDefault class="d-flex justify-content-center">
+                    <img src="/assets/images/allstatus.jpg" alt="" class="img-fluid w-50">
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>

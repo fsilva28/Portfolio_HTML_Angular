@@ -1,0 +1,31 @@
+#button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rounded-button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5%;
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 60PX;
+}
+
+.rounded-button:hover {
+    background-color: yellow;
+    color: green;
+}
+
+.img-fluid {
+    margin-top: 5%;
+}
